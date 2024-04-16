@@ -21,4 +21,6 @@ jobs:
         docker build . --tag ghcr.io/rkalescky/hello-world:latest
         docker run ghcr.io/rkalescky/hello-world:latest
         docker push ghcr.io/rkalescky/hello-world:latest
+        docker tag ghcr.io/rkalescky/hello-world:latest ghcr.io/rkalescky/image_test:latest
+        docker push ghcr.io/rkalescky/image_test:latest
 
